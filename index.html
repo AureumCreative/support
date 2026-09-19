@@ -10,24 +10,39 @@
     <style>
         body {
             font-family: Georgia, serif;
-            background: #d4af37;
             color: #3b2a00;
-            max-width: 600px;
-            margin: 0 auto;
+
+            /* Background image */
+            background-image: url("background.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+
+            min-height: 100vh;
+            margin: 0;
             padding: 100px 20px;
-            text-align: center;
+            box-sizing: border-box;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .card {
-            background: rgba(255, 248, 220, 0.9);
+            background: rgba(255, 252, 240, 0.92);
+            max-width: 600px;
+            width: 100%;
             padding: 45px 30px;
             border-radius: 16px;
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            box-sizing: border-box;
         }
 
         h1 {
             font-size: 32px;
-            margin-bottom: 10px;
+            margin: 0 0 10px;
         }
 
         .names {
@@ -50,6 +65,7 @@
             text-decoration: none;
             border-radius: 8px;
             font-size: 18px;
+            transition: opacity 0.2s;
         }
 
         a:hover {
@@ -59,6 +75,7 @@
 </head>
 
 <body>
+
     <div class="card">
         <h1>Support my work</h1>
 
@@ -70,12 +87,13 @@
             If you're looking for my Ko-fi page, you've found the right place.
         </p>
 
-<a href="https://ko-fi.com/AureumCreative"
-   referrerpolicy="no-referrer"
-   rel="noreferrer">
-    Continue to Ko-fi
-</a>
+        <a href="https://ko-fi.com/AureumCreative"
+           referrerpolicy="no-referrer"
+           rel="noreferrer">
+            Continue to Ko-fi
+        </a>
     </div>
+
 </body>
 </html>
 
